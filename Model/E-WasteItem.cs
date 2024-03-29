@@ -10,7 +10,11 @@ namespace E_wasteManagementWebapi.Model
         public int ItemId { get; set; }
      
         public string? ItemName { get; set; }
-        public string? Itemtype { get; set; }
+
+           [NotMapped]
+        public IFormFile? ItemImage { get; set; }
+ 
+        public string? UniqueFileName { get; set; }
         public int ItemQuantity { get; set; }
         public string? ItemCondition { get; set; }
         public string? ItemLocation { get; set; }

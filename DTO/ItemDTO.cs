@@ -5,7 +5,9 @@
         public int ItemId { get; set; }
 
         public string? ItemName { get; set; }
-        public string? Itemtype { get; set; }
+         public IFormFile? ItemImage { get; set; }
+ 
+        public string? UniqueFileName { get; set; }
         public int ItemQuantity { get; set; }
         public string? ItemCondition { get; set; }
         public string? ItemLocation { get; set; }
